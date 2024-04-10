@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical">
+
+    <RelativeLayout    android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent">
+
+
+
+
+        <LinearLayout
+            android:background="@color/design_default_color_on_primary"
+            android:id="@+id/featured_background"
+            android:layout_height="300dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="170dp"
+            android:orientation="vertical">
+            <TextView
+                android:fontFamily="@font/baloo"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:lineHeight="24sp"
+                android:text="hello this is featured string"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:text="this is featured location description i have  to make" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="@color/design_default_color_secondary_variant"
+            android:id="@+id/featured_recycler"
+            android:layout_height="300dp"
+            android:layout_toRightOf="@id/featured_background"
+            android:layout_width="match_parent" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nxt"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/btnNext"
+        />
+
+
+
+
+</LinearLayout>

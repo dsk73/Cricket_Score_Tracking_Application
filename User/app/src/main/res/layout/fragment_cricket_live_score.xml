@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/FirstInninng"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.coepzest.zest23.CricketLiveScore"
+    android:background="#161A30">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="20dp"
+        android:background="#161a30">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient1"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/MatchNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="MatchNo"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/Toss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Toss"
+                    android:textAlignment="center"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/Innings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Innings"
+                    android:textAlignment="center"
+                    android:textSize="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/TeamALogo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/TeamA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="TeamA"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/ARuns"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textSize="20dp" />
+
+
+
+                        <TextView
+                            android:id="@+id/AOvers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/SecondInning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/TeamBLogo"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center">
+
+                        </ImageView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/TeamB"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="TeamB"
+                                android:textAlignment="center"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/BRuns"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textSize="20dp" />
+
+
+
+                            <TextView
+                                android:id="@+id/BOvers"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Target"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Target"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="70dp"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/CRR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/RRR"/>
+
+                        <TextView
+                            android:id="@+id/RRR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/CRR"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

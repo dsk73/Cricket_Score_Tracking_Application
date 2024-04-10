@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rectangle">
+
+
+            <TextView
+                android:id="@+id/EventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/baloo"
+                android:padding="25dp"
+                android:text="FootBall"
+                android:textSize="30sp"
+                android:textColor="@color/textColorPrimary"/>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/Icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/football_icon" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

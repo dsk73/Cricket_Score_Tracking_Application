@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    tools:context="com.coepzest.zest23.PrivacyPolicy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="@string/Heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Information Collection and Use"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Information"/>
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOg Data"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LogData"/>
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cache"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Cache"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Third Party Services"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ThirdParty"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Security"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/DataSecurity" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Links to Other Sites"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Links"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use of Apache 2.0"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Apache"/>
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Children’s Privacy"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ChildrenPrivacy"/>
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disclaimer"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Disclaimer"/>
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Changes to This Privacy Policy"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Changes"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Information"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ContactUs"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

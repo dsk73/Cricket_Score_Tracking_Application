@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.coepzest.zest23.MapPage">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        />
+
+
+    <HorizontalScrollView
+        android:id="@+id/hscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/mainBuilding"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Main Building"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toEndOf="@+id/grd1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.widget.Button
+                android:id="@+id/boatClub"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Boat Club"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.widget.Button
+                android:id="@+id/COEPGround"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="COEP Ground"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toEndOf="@+id/grd3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.widget.Button
+                android:id="@+id/Refreshment"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Food Stalls"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toEndOf="@+id/grd3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.widget.Button
+                android:id="@+id/TableTennis"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Table Tennis"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toEndOf="@+id/grd3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/MapEventRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#31304D"
+    android:orientation="vertical">
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp" />
+
+    <LinearLayout
+        android:id="@+id/Zest23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space1"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:src="@drawable/zestlogosvh"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ZEST'24"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="34sp" />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Zest23"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Areana Of Dreams"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Space
+        android:id="@+id/Space2"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_below="@id/Theme" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Space2"
+        />
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/list" />
+
+
+</RelativeLayout>

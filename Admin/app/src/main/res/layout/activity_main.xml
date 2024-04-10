@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Upcoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upcoming"/>
+
+    <Button
+        android:id="@+id/Live"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Live Match"/>
+
+    <Button
+        android:id="@+id/Past"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Past Match"/>
+
+    <Button
+        android:id="@+id/LeaderBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leaderboard"/>
+
+    <Button
+        android:id="@+id/Cricket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cricket"/>
+
+
+
+</LinearLayout>

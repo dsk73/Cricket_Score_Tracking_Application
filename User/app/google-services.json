@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "478863092318",
+    "firebase_url": "https://zest24-78d89-default-rtdb.firebaseio.com",
+    "project_id": "zest24-78d89",
+    "storage_bucket": "zest24-78d89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478863092318:android:e0da831ff30b8b7dd962cf",
+        "android_client_info": {
+          "package_name": "com.coepzest.zest23"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY7FXVg1eOuJl_ZCyngo6YHvN3yUmnJm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

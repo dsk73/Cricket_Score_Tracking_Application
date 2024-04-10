@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveScore">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listviewitem" />
+
+
+    <ListView
+        android:id="@+id/listviewitem"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:choiceMode="singleChoice"
+        android:scrollingCache="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/listviewitem"
+            >
+
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/EventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="EventName"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/Category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Category"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/Innings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Innings"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/MatchNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MatchNo"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/TeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TeamA"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/TeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TeamB"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/TeamALogo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+
+            <Button
+                android:id="@+id/TeamASelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team A Logo"/>
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/TeamBLogo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+
+            <Button
+                android:id="@+id/TeamBSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team B Logo"/>
+
+            <Button
+                android:layout_marginTop="25dp"
+                android:id="@+id/Upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload"/>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

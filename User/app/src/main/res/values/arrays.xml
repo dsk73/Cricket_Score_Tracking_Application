@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="NavigationIcons">
+        <item>@drawable/dashboard</item>
+        <item>@drawable/timelessline</item>
+        <item>@drawable/gallery</item>
+        <item>@drawable/location</item>
+        <item>0</item>
+        <item>@drawable/profile</item>
+    </array>
+
+    <string-array name="NavigationItems">
+        <item>Dashboard</item>
+        <item>Events</item>
+        <item>Gallery</item>
+        <item>Map</item>
+        <item />
+        <item>Explore More</item>
+    </string-array>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaderBoardUpdator">
+
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/LinearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/listviewitem" />
+
+
+    <ListView
+        android:id="@+id/listviewitem"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:choiceMode="singleChoice"
+        android:scrollingCache="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/listviewitem"
+        >
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/EventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:hint="EventName"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/Points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Points"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/Position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Position"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/Team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Team"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/Category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/Boys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Boys"/>
+
+        <Button
+            android:id="@+id/Girls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Girls"/>
+
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:id="@+id/Upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
