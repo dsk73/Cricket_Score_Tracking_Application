@@ -95,7 +95,7 @@ public class CricketLiveScore extends Fragment {
                         }
                     }
                 });
-
+//data collection of event
         db.collection(CurrentEvent)
                 .document("Live")
                 .collection("Score")
